@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TimeLine</title>
+    <link rel="shortcut icon" href="Cells.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+
+<style>
+    #myBtn {
+        opacity: 0;
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        z-index: 99;
+        font-size: 18px;
+        outline: none;
+        background-color: black;
+        color: white;
+        cursor: pointer;
+        padding: 15px;
+        border-radius: 50px;
+        border: 1.5px solid white;
+        transition: 1s ease;
+
+        transition-property: opacity, color, background-color, border-color;
+
+    }
+
+    #myBtn:hover {
+        background-color: white;
+        color: black;
+        border-color: black;
+    }
+
+    iframe {
+        max-width: 375px;
+        min-width: 360px;
+        height: 310px;
+        border: 1px solid black;
+        border-radius: 5px;
+    }
+</style>
+
+<body>
+    <button onclick="topFunction()" id="myBtn" title="Pa' arriba">⇑</button>
+
+    <section id="header">
+        <div class="header container">
+            <div class="nav-bar">
+                <div class="brand">
+                </div>
+                <div class="nav-list">
+                    <div class="hamburger">
+                        <div class="bar"></div>
+                    </div>
+
+                    <ul>
+                        <li>
+                            <p class="mini" data-after="21881">SAMUEL ALEJANDRO CHAMALÉ RAC</p>
+                        </li>
+                        <li>
+                            <p class="mini" data-after="REFERENCIAS"><a href="#referencias">REFERENCIAS</a></p>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- End Header-->
+
+    <!-- Hero Section -->
+
+    <!-- Header -->
+    <section id="unique">
+        <div class="unique container">
+            <div class="box">
+                <h1>Lenguajes </h1>
+                <h1>de Programación</h1>
+                <h1>Time line</h1>
+                <a href="#projects" type="button" class="cta"> Ver ↴</a>
+
+            </div>
+
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="projects container">
+
+            <!-- 
+            -->
+
+
+            <div class="container" id="paddingneed">
+                <div class="timeline">
+
+                    <ul>
+                        <!--1-->
+                        <li class="sandra">
+                            <div class="timeline-content">
+                                <h3 class="date">1883</h3>
+                                <h1>Charles Babbage & Ada Lovelace</h1>
+                                <p>Por aquellos años existía un viejo matemático que había creado una compleja máquina,
+                                    la cual podía realizar sustracciones y adiciones numéricas automáticas. Sin embargo,
+                                    no fue este brillante personaje, llamado Charles Babbage, quien escribió el primer
+                                    lenguaje de programación, en realidad fue Ada Lovelace, a quien también se le
+                                    atribuye la creación del primer programa computacional.</p>
+                                <div class="project-img">
+                                    <img src="https://i.pinimg.com/originals/f4/d4/8e/f4d48eec4dfad9ad349be95dd284e633.png"
+                                        alt="img">
+                                </div>
+
+                            </div>
+                        </li>
+                        <!--2-->
+                        <li class="sandra">
+                            <div class="timeline-content">
+                                <h3 class="date">1944</h3>
+                                <h1>Konrad Zuse X Plankalkül</h1>
+                                <p>El científico Konrad desarrolló Plankalkül en 1944, sin embargo no fue publicado
+                                    hasta 1972. Este lenguaje buscaba almacenar fragmentos de código, para su uso
+                                    posterior y continuo.</p>
+                                <div class="project-img">
+                                    <img src="https://thumbs.imagekind.com/4304804_650/--Konrad-Zuse-Plankalkl_art.jpg?v=1492632795"
+                                        alt="img">
+                                </div>
+
+                            </div>
+                        </li>
+
+                        <!--3-->
+                        <li class="sandra">
+                            <div class="timeline-content">
+                                <h3 class="date">1949</h3>
+                                <h1>ASSEMBLY
+                                </h1>
+                                <p>Como la programación en el lenguaje de máquina resultaba tan tediosa, a inicios de
+                                    los años 50 se creó el código de ensamblaje, el cual era un tipo de lenguaje de
+                                    programación de bajo nivel que utilizaba varias abreviaturas nemotécnicas para la
+                                    representación de las operaciones. Normalmente se conoce a David J.Wheeler como el
+                                    creador del primer lenguaje ensamblador, esto debido a su importantísima
+                                    contribución en el desarrollo de EDSAC. Sin embargo, fue Kathleen Booth en Londres
+                                    quien en realidad escribió el primer lenguaje ensamblador.</p>
+                                <div class="project-img">
+                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAVQAAACUCAMAAAD70yGHAAACMVBMVEX///+dnZ38///3///0//////v///b///n///32//////OQkZGhoaH6///u///dx5+np6a2g0/Jyc//6Mzr//8AIFZuo7z//+5gYGDLtaeNjZeBjoLh///59eaqprD//+SelpSor7nk8v/w5tXs3Mazvs+Pa2TN8fr+7+PL1eaosbCartC6xcqPj56XkoacuMGyk3lzjriIjY2ejYqfpL1rbHtNUWT/7tmMeEtXVndtiG6AkJ3r7O2Bc3+WiHybw9Haso1DZpQ+QGTK2MMAHWLPxqji59DZvbqwvrH19f/BqqjHw77t58B1eoYAAACHclNxfJgAADnvx5oAT4qrkHtNQUmci5fj38bK3/nny7aq1+ZohZmjg2dQhqa4z+ONobzs3Nevxe3/4sGfi1xtVlnb6vyaa0NVgomLo77BsLHbtaL//9XKrpJyWUzY5+KacFYUR2rw29yDfHNLNzR4l5XMv49BMkyYq9XFpKDPooVedZmqpJjK2fp5UVJAJUG82uOAZlZ8fERMdalLbGZbSWVlY0NSVohaGAC2kGWonH9rQyOUe31wc3b2yrHu/9r+3c40AACVl34gM1RXJC9xYlRiWFpHPzcASV2HrrVbYpJRMh2QkGksDidiaXSOj7RQAA82JQmtr9y+q4B5PiJjPEBHU0QyQVPc78ChdHJtaow0V14AABg1OWvk26WNazVfQ0qynWSAUwBzrt6sspahYi4+DCyRqKDgroNAGUXKy+tcjMJXPjHSAAAT8ElEQVR4nO2dj18aZ57Hv6P8CoNAlYQOwjAgE1AcVCCwLmiSpmhEvbpdokxiEWxoo1LTWLsaSWsvm/bikh9n22zTZpO9y+71ml53e9fedi/56+55hh9qMqRamUCz885rXuDAwHc+eWaeh+/z/X4feFFHyNQU3YugA5kaowOi3iY8fxCyqLVHFlUCZFElQBZVAqqL6ul8poY8T2yJSnV1qvNcM1Bc99QtMmljkKiUxcp3WazVDrafXU5BjMjauSihfW/Z+4xsbngqorZNHD597Mz0a3zKxkIX3uGF2EMVHZ6xB6seHTdBOJR/X29oz8BwVe3/4aiImjYtrPBJAD4FLBDabiwqnwU6nLGLt0AbrYBV66gNS37xhxX0nDI9O7sbmi1R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"
+                                        alt="img">
+                                </div>
+
+                            </div>
+                        </li>
+                        <!--4-->
+                        <li class="sandra">
+                            <div class="timeline-content">
+                                <h3 class="date">1952</h3>
+                                <h1>AUTOCODE
+                                </h1>
+                                <p>Alick Glennie desarrolló el primer Autocode, el cual fue el primer lenguaje compilado
+                                    que se implementó, este lenguaje fue utilizado en algunas de las primeras
+                                    computadoras, incluso en la célebre Mark 1 en la Universidad de Manchester. </p>
+                                <div class="project-img">
+                                    <img src="https://www.thoughtco.com/thmb/80JcoOzWvnF3QTUio8eQI7sNNYQ=/1024x817/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-515412214-0ebbaaced27e4e168374391cfb0eebc2.jpg"
+                                        alt="img">
+                                </div>
+
+                            </div>
+                        </li>
+
+                        <!--5-->
+                        <li class="sandra">
+                            <div class="timeline-content">
+                                <h3 class="date">1957</h3>
+                                <h1>FORTRAN
+                                </h1>
+                                <p>Fortran, desarrollado por John Backus en IBM, es un lenguaje de programación el cual
+                                    fue diseñado para su implementación en los campos de la computación numérica y
+                                    científica. Cabe destacar que el Voyager 1 y 2 fueron escritos en FORTRAN 5. Además,
+                                    FORTRAN aún es usado actualmente en algunas supercomputadoras, se le considera el
+                                    lenguaje de programación más antiguo aún en uso.
+                                </p>
+                                <div class="project-img">
+                                    <img src="data:image/jpeg;base64,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"
+                                        alt="img">
+                                </div>
+
+                            </div>
+                        </li>
+
+                        <!--6-->
+                        <li class="sandra">
+                            <div class="timeline-content">
+                                <h3 class="date">1958</h3>
+                                <h1>
+                                    ALGOL
+                                </h1>
+                                <p>
+                                    Poseía una sintaxis más simple que FORTRAN y es el predecesor de lenguajes como
+                                    Pascal, C, C++ y Java. </p>
+
+
+                            </div>
+
+                            <!--7-->
+                        <li class="sandra">
+                            <div class="timeline-content">
+                                <h3 class="date">1959</h3>
+                                <h1>
+                                    COBOL
+                                </h1>
+                                <p>
+                                    COBOL, un lenguaje de programación que aún prevalece debido a su diseño universal,
+                                    actualmente se utiliza principalmente para sistemas bancarios , sin embargo en los
+                                    90 casi el 80% de las empresas del mundo funcionaban con COBOL. </p>
+
+                            </div>
+                            <!--8-->
+                        <li class="sandra">
+                            <div class="timeline-content">
+                                <h3 class="date">1964</h3>
+                                <h1>
+                                    BASIC
+                                </h1>
+                                <p>
+                                    Fue desarrollado por Bill Gates y Paul Allen, fundadores de Microsoft. Este fue
+                                    popularmente utilizada en las micro computadoras hogareñas de los años 80. BASIC es
+                                    un lenguaje de alto nivel.</p>
+
+
+                            </div>
+
+                        <li class="yama">
+                            <div class="timeline-content">
+                                <h3 class="date">1970</h3>
+                                <h1>
+                                    Mi abuelo cuenta que...
+                                </h1>
+                                <p>Mi abuelo cuenta que por los años de 1970, en la institución bancaria donde él
+                                    trabajaba existían computadoras de gran dimensión, eran de la marca IBM.
+                                    Reflexionando, es gracias a los lenguajes de programación como Basic que las
+                                    computadoras dejaron de ser máquinas exclusivas, y comenzaron a formar parte de
+                                    millones de vidas. </p>
+
+                                <div class="project-img">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/IBM_Electronic_Data_Processing_Machine_-_GPN-2000-001881.jpg/275px-IBM_Electronic_Data_Processing_Machine_-_GPN-2000-001881.jpg"
+                                        alt="img">
+                                </div>
+                            </div>
+                            <!--9-->
+                        <li class="sandra">
+                            <div class="timeline-content">
+                                <h3 class="date">1972</h3>
+                                <h1>
+                                    C
+                                </h1>
+                                <p>
+                                    Fue desarrollado por Dennis Ritchie en Bell Telephone Laboratories para su uso en
+                                    Unix. Muchos de los lenguajes de alto nivel actuales derivan de C. <br><br>
+                                    Lenguajes como:
+                                    C#, D, Go, Java, JavaScript, Limbo, LPC, Perl, PHP y Python.
+                                </p>
+
+                            </div>
+
+                        <li class="yama">
+                            <div class="timeline-content">
+                                <h3 class="date">2013</h3>
+                                <h1>Mi Mamá cuenta que...
+                                </h1>
+                                <p>
+                                    Actualmente los programas computacionales han facilitado su trabajo, simplificando,
+                                    mejorando su exactitud y reduciendo el factor de error. Por ejemplo, antes los
+                                    cálculos de salarios se calculaban en Excel, en cambio ahora gracias a la evolución
+                                    de los lenguajes de programación poseen herramientas especializadas para esta tarea.
+                                    Fue en el año 2013 cuando se realizó este cambio.
+                                </p>
+
+                            </div>
+                        </li>
+
+
+                        <li class="yama">
+                            <div class="timeline-content">
+                                <h3 class="date">2018</h3>
+                                <h1>Mi hermana cuenta que…
+                                </h1>
+                                <p>
+                                    Mi hermanita comenzó a explorar Scratch, una herramienta desarrollada por el MIT que
+                                    permite a los niños aprender fundamentos de programación por medio de la creación de
+                                    juegos/programas escritos con lo que se podría considerar un lenguaje de
+                                    programación de bloques literales.
+                                </p>
+
+                            </div>
+                        </li>
+
+                        <!--7-->
+                        <li class="yama">
+                            <div class="timeline-content">
+                                <h3 class="date">2019</h3>
+                                <h1>Mi Inicio
+                                </h1>
+                                <p>
+                                    Fue hasta bachillerato cuando conocí realmente un lenguaje de programación, este
+                                    lenguaje era Javascript. Por otro lado fue Sublime Text el primer editor de código
+                                    que utilicé. Posteriormente me enseñaron Java, y comencé a explorar NetBeans.
+                                </p>
+                                <div class="project-img">
+                                    <img src="https://i.pinimg.com/originals/78/18/6e/78186ef79f09d2acbf99af9e3938d8a2.jpg"
+                                        alt="img">
+                                </div>
+
+                            </div>
+                        </li>
+                        <!--7-->
+                        <li class="yama">
+                            <div class="timeline-content">
+                                <h3 class="date">2019</h3>
+                                <h1>Mi Papá cuenta que...
+                                </h1>
+                                <p>
+                                    El sistema de transacciones de donde él trabaja era antiguo, y aunque había tenido
+                                    mejoras era un sistema unificado por lo que no se podían actualizar aspectos
+                                    específicos sin afectar todo el sistema, esto se sustituyó sistema de módulos que se
+                                    puede desacoplar modularmente para no afectar otros módulos o servicios del
+                                    programa. </p>
+
+                            </div>
+                        </li>
+
+                        <li class="yama">
+                            <div class="timeline-content">
+                                <h3 class="date">2021</h3>
+                                <h1>Mi Papá cuenta que...
+                                </h1>
+                                <p>
+                                    En su trabajo se emitían fianzas de los contratos de trabajo manualmente, ahora se
+                                    implementó un sistema de carga de información con los datos clave, esto permite la
+                                    emisión masiva de las fianzas. Lo cual permitió dar un mejor servicio. </p>
+
+                            </div>
+                        </li>
+
+
+
+                        <li class="neutral">
+                            <div class="timeline-content">
+                                <h3 class="date" id="clock">14/10/2020</h3>
+                                <h1>Actualidad</h1>
+                                <iframe
+                                    src="https://www.google.com/search?igu=1&q=Programming Languages News "></iframe>
+                                </iframe>
+                            </div>
+                        </li>
+
+
+
+                        <li id="referencias" class="neutral">
+                            <div class="timeline-content">
+                                <h3 class="date"></h3>
+                                <h1>REFERENCIAS</h1>
+                                <div class="citas">
+                                    <div>
+
+                                        <a class="id_red" target="_blank"
+                                            href="https://devskiller.com/history-of-programming-languages/">
+                                            - Lestal, J. (2021, 26 agosto). History of programming languages. DevSkiller
+                                            - Powerful Tool to Test Developers Skills.
+                                            <br>
+                                            <br>
+                                        </a>
+
+                                        <a class="id_red" target="_blank"
+                                            href="https://www.geeksforgeeks.org/the-evolution-of-programming-languages/">
+                                            - GeeksforGeeks. (2021, 28 enero). The Evolution of Programming Languages.
+                                            <br>
+                                            <br>
+                                        </a>
+                                        <a class="id_red" target="_blank"
+                                            href="https://www.computerhistory.org/timeline/software-languages/">
+                                            - Computer History Museum. (s. f.). Software & Languages | Timeline of
+                                            Computer History | Computer History Museum. CHM. Recuperado 17 de enero de
+                                            2022.
+                                            <br>
+                                            <br>
+                                        </a>
+                                        <a class="id_red" target="_blank"
+                                            href="https://www.learnacademy.org/blog/first-programming-language-use-microsoft-apple/">
+                                            - Kidder, T. J. (2021, 10 noviembre). History of Programming Languages |
+                                            Full Stack Programmer Course. LEARN Academy - San Diego’s Original Coding
+                                            Bootcamp.
+                                            <br>
+                                            <br>
+                                        </a>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <p>
+
+                            </p>
+                        </li>
+
+                        <li id="referencias" class="neutral">
+                            <div class="timeline-content">
+                                <h3 class="date"></h3>
+                                <h1>¿Qué importancia tiene esta tecnología en su vida diaria y en la sociedad actual?
+                                    ¿Qué pasaría si de repente desapareciera dicha tecnología?</h1>
+
+                                <p>
+                                    No hubieran podido realizarme una resonancia magnética nuclear o sacar la licencia
+                                    de conducir.
+                                    <br><br>
+                                    Por otro lado, cosas como transferencias monetarias desde tu celular no serían
+                                    posibles, no sería posible el teletrabajo o reuniones virtuales (nadie hubiese
+                                    podido programar Zoom). Los smartphones serían prácticamente cajitas de plástico. No
+                                    podríamos viajar fácilmente pues muchos sistemas de navegación no funcionarán.
+                                    <br><br>
+                                    En realidad el impacto de los lenguajes de programación es inmenso para muchas ramas
+                                    de nuestra vida como sociedad, sin lenguajes de programación el trabajo y la
+                                    educación serían limitados, el arte y entretenimiento no sería igual pues no
+                                    existirán programas como After Effects o Blender. Para la ciencia no existirán
+                                    programas de análisis de datos y simulaciones.
+                                    <br><br>Mucha de la tecnología actual no existiría, pues el software requiere
+                                    código, código binario escrito actualmente con lenguajes de programación, y aunque
+                                    al fin y al cabo todo es código binario los niveles de abstracción actuales harían
+                                    casi imposible programar de la manera que se requiere hoy en dia.
+
+                                </p>
+                            </div>
+                        </li>
+
+
+
+                    </ul>
+
+
+                </div>
+            </div>
+    </section>
+    <!-- End Projects Section -->
+    <section id="icons2">
+        <div class="icons2 ">
+
+            <p class="inherit">2021. Not all rights reserved</p>
+        </div>
+    </section>
+
+
+    <!-- End Footer Section -->
+    <script type="text/javascript" src="app.js"></script>
+    <script>
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+                mybutton.style.opacity = "1";
+            } else {
+                mybutton.style.opacity = "0";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+
+        setInterval(showTime, 1000);
+        function showTime() {
+            let time = new Date();
+            let year = time.getFullYear();
+            let month = time.getMonth() + 1;
+            let day = time.getDate();
+            let hour = time.getHours();
+            let min = time.getMinutes();
+            let sec = time.getSeconds();
+            am_pm = "AM";
+
+            if (hour > 12) {
+                hour -= 12;
+                am_pm = "PM";
+            }
+            if (hour == 0) {
+                hr = 12;
+                am_pm = "AM";
+            }
+
+            hour = hour < 10 ? "0" + hour : hour;
+            min = min < 10 ? "0" + min : min;
+            sec = sec < 10 ? "0" + sec : sec;
+
+            let currentTime = hour + ":"
+                + min + ":" + sec + am_pm + " > " + day + "/" + month + "/" + year;
+
+            document.getElementById("clock")
+                .innerHTML = currentTime;
+        }
+
+        showTime();
+    </script>
+
+</body>
+
+</html>
